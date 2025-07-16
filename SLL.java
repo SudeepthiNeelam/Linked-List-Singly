@@ -4,7 +4,7 @@ class Node{
     int value;
     Node next;
     
-    // constructor 
+    
     
     Node(int value){
         this.value = value;
@@ -17,7 +17,7 @@ public class SLL{
     Node head;
     
     
-    // InsertAtBeginning 
+    
     
     public void InsertAtBeginning(int value){
         Node newNode = new Node(value);
@@ -26,7 +26,7 @@ public class SLL{
     }
     
     
-    //insertatEnd 
+   
     
     public void InsertAtEnd(int value){
         Node temp = head;
@@ -37,7 +37,7 @@ public class SLL{
         temp.next = newNode;
     }
     
-    //insertAtSpecific Position 
+   
     
     public void insertAtSpecificPosition(int value, int position){
      if(position<1){
@@ -62,14 +62,13 @@ public class SLL{
      else{
          newNode.next = temp.next;
          temp.next = newNode;
-        //  temp.next = newNode;
-        //  newNode.next = null;
+        
      }
      
     }
     
 
-    // deleteatbeg
+    
     
     public void deleteatbeg(){
         if(head==null){
@@ -79,7 +78,7 @@ public class SLL{
     }
 
 
-    //deleteatend 
+    
     
     public void deleteatend(){
         Node temp = head;
@@ -91,7 +90,7 @@ public class SLL{
 
     
     
-    // display method 
+    
     
     public void display(){
      
